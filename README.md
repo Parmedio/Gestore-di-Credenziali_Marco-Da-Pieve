@@ -11,7 +11,7 @@ Creare un programma che permetta di salvare in un database **username** e **pass
 ### Funzionamento programma
 
 #### Creare e Salvare credenziali
-Quando un utente **registra** username e password viene fatta una verifica se nel DB esiste già un utente con quel username, se si restituisco un messaggio di errore.  Se la registrazione va a buon fine viene restituito un numero di matricola (ID univoco).
+Quando un utente **registra** username e password viene fatta una verifica se nel DB esiste già un utente con quel username, se si, restituisco un messaggio di errore.  Se la registrazione va a buon fine viene restituito un numero di matricola (ID univoco).
 
 #### Stampare ricevuta
 Il programma da la possibilità di **stampare una ricevuta** di avvenuta registrazione inserendo username e password, nel nostro caso la ricevuta sarà un file csv.  Le informazioni contenute nella ricevuta sono le seguenti:  
