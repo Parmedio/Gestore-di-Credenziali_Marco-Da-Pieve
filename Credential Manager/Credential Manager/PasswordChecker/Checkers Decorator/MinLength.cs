@@ -10,9 +10,9 @@ namespace Credential_Manager.PasswordChecker.Checkers_Decorator
     {
         public MinLength(IPWChecker previousChecker, string password) : base(previousChecker, password)
         {
-            _failMessage = "Password must be at least 7 characters";
+            FailMessage = "Password must be at least 7 characters";
         }
 
-        protected override bool CurrentCheck() => _password.Length > 7;
+        protected override bool CurrentCheck() => Password.Length >= 7;
     }
 }

@@ -8,21 +8,21 @@ namespace Credential_Manager.PasswordChecker
 {
     internal abstract class PWChecker : IPWChecker
     {
-        protected readonly IPWChecker _previousChecker;
-        protected readonly string _password;
-        protected string _failMessage;
+        private readonly IPWChecker _previousChecker;
+        protected readonly string Password;
+        protected string FailMessage;
 
 
         public PWChecker(IPWChecker previousChecker, string password)
         {
             _previousChecker = previousChecker;
-            _password = password;
+            Password = password;
         }
         public bool IsValid() => _previousChecker.IsValid() && CurrentCheck();
         public string GetFailedRequirement() =>
             CurrentCheck() ?
             $"{_previousChecker.GetFailedRequirement()}" :
-            $"{_previousChecker.GetFailedRequirement()}{_failMessage}";
+            $"{_previousChecker.GetFailedRequirement()}{FailMessage}";
 
         protected abstract bool CurrentCheck();
 
