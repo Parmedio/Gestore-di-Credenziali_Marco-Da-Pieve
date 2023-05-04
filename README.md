@@ -15,7 +15,7 @@ Quando un utente **registra** username e password viene fatta una verifica se ne
 
 #### Stampare ricevuta
 Il programma da la possibilità di **stampare una ricevuta** di avvenuta registrazione inserendo username e password, nel nostro caso la ricevuta sarà un file csv il cui nome rispetta questo pattern *matricola-yyyy-mm-gg.csv*.  Le informazioni contenute nella ricevuta sono le seguenti:  
-1. matricola - esempio '1'
-2. username  - esempio 'francesco.rossi@gmail.com'
-3. password  - esempio 'G4ttORo$so'
-4. data      - esempio '20230504' (data di inserimento delle credenziali utente)
+1. matricola -> esempio '1'
+2. username --> esempio 'francesco.rossi@gmail.com'
+3. password --> esempio 'G4ttORo$so'
+4. data ------> esempio '20230504' (data di inserimento delle credenziali utente)
