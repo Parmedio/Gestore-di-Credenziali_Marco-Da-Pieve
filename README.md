@@ -1,6 +1,8 @@
 # Gestore di Credenziali
 ### Specifiche programma
-Creare un programma che permetta di salvare in un database **username** e **password** che vengono inserite dall'utente.  *requisiti password*
+Creare un programma che permetta di salvare in un database **username** e **password** che vengono inserite dall'utente.
+
+*requisiti password*
 1. deve avere almeno 7 caratteri
 2. deve avere almeno 1 carattere in maiuscolo
 3. deve avere almeno 1 cifra numerica
