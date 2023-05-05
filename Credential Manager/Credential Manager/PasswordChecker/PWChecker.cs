@@ -16,7 +16,7 @@
         public string GetFailedRequirement() =>
             CurrentCheck() ?
             $"{_previousChecker.GetFailedRequirement()}" :
-            $"{_previousChecker.GetFailedRequirement()}{FailMessage}";
+            $"{_previousChecker.GetFailedRequirement()}- {FailMessage}\n";
 
         protected abstract bool CurrentCheck();
 
