@@ -1,0 +1,1 @@
+Scaffold-DbContext "Data Source=ACADEMYNETUD01\SQLEXPRESS;Initial Catalog=CREDENTIALS; Integrated Security=True; Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;" -Provider Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models/Entities -ContextDir Repositories/DBContext -Context CredentialContext -Project DBManager

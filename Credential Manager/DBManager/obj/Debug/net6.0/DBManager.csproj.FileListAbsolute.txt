@@ -1,0 +1,14 @@
+C:\Users\student\source\repos\DesignPattern\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\bin\Debug\net6.0\DBManager.deps.json
+C:\Users\student\source\repos\DesignPattern\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\bin\Debug\net6.0\DBManager.runtimeconfig.json
+C:\Users\student\source\repos\DesignPattern\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\bin\Debug\net6.0\DBManager.dll
+C:\Users\student\source\repos\DesignPattern\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\bin\Debug\net6.0\DBManager.pdb
+C:\Users\student\source\repos\DesignPattern\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\obj\Debug\net6.0\DBManager.csproj.AssemblyReference.cache
+C:\Users\student\source\repos\DesignPattern\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\obj\Debug\net6.0\DBManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\student\source\repos\DesignPattern\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\obj\Debug\net6.0\DBManager.AssemblyInfoInputs.cache
+C:\Users\student\source\repos\DesignPattern\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\obj\Debug\net6.0\DBManager.AssemblyInfo.cs
+C:\Users\student\source\repos\DesignPattern\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\obj\Debug\net6.0\DBManager.csproj.CoreCompileInputs.cache
+C:\Users\student\source\repos\DesignPattern\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\obj\Debug\net6.0\DBManager.dll
+C:\Users\student\source\repos\DesignPattern\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\obj\Debug\net6.0\refint\DBManager.dll
+C:\Users\student\source\repos\DesignPattern\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\obj\Debug\net6.0\DBManager.pdb
+C:\Users\student\source\repos\DesignPattern\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\obj\Debug\net6.0\DBManager.genruntimeconfig.cache
+C:\Users\student\source\repos\DesignPattern\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\obj\Debug\net6.0\ref\DBManager.dll
