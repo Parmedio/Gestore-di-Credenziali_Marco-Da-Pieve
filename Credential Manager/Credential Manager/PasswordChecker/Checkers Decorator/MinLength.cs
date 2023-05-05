@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Credential_Manager.PasswordChecker.Checkers_Decorator
+﻿namespace Credential_Manager.PasswordChecker.Checkers_Decorator
 {
     internal class MinLength : PWChecker
     {
