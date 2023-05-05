@@ -1,27 +1,21 @@
 ﻿using DBManager.Models.Entities;
 using DBManager.Repositories.DBContext;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DBManager.Repositories
 {
     public interface IUsersRepository
     {
         bool Insert(User user);
-        void Query();
+        bool IsAreadyUsername(string username);
+        User SearchByIDAndPassword(int ID, string password);
     }
-    internal class UsersRepository : IUsersRepository
+    public class UsersRepository : IUsersRepository
     {
-        private readonly ILogger<UsersRepository> _logger;
         private readonly CredentialContext _db;
 
-        public UsersRepository(CredentialContext context, ILogger<UsersRepository> logger)
+        public UsersRepository(CredentialContext context)
         {
-            _logger = logger;
             _db = context;
         }
         public bool Insert(User user)
@@ -32,16 +26,35 @@ namespace DBManager.Repositories
                 _db.SaveChanges();
                 return true;
             }
-            catch (Exception e)
+            catch
             {
-                _logger.LogError(e, "Can not insert new user");
                 return false;
             }
         }
 
-        public void Query()
+        public bool IsAreadyUsername(string username)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return _db.Users.Any(u => u.UserName == username);
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public User SearchByIDAndPassword(int ID, string password)
+        {
+            try
+            {
+                return _db.Users.FirstOrDefault(u => u.UserId == ID && u.Password == password);
+                
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
         }
     }
 }

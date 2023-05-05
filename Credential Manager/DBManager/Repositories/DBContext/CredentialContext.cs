@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using DBManager.Models.Entities;
+﻿using DBManager.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace DBManager.Repositories.DBContext;
