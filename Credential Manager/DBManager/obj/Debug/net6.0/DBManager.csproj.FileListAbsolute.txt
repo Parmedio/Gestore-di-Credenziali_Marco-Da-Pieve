@@ -12,3 +12,17 @@ C:\Users\student\source\repos\DesignPattern\Gestore-di-Credenziali_Marco-Da-Piev
 C:\Users\student\source\repos\DesignPattern\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\obj\Debug\net6.0\DBManager.pdb
 C:\Users\student\source\repos\DesignPattern\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\obj\Debug\net6.0\DBManager.genruntimeconfig.cache
 C:\Users\student\source\repos\DesignPattern\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\obj\Debug\net6.0\ref\DBManager.dll
+C:\Academy\Candidati\De Pieve\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\bin\Debug\net6.0\DBManager.deps.json
+C:\Academy\Candidati\De Pieve\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\bin\Debug\net6.0\DBManager.runtimeconfig.json
+C:\Academy\Candidati\De Pieve\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\bin\Debug\net6.0\DBManager.dll
+C:\Academy\Candidati\De Pieve\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\bin\Debug\net6.0\DBManager.pdb
+C:\Academy\Candidati\De Pieve\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\obj\Debug\net6.0\DBManager.csproj.AssemblyReference.cache
+C:\Academy\Candidati\De Pieve\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\obj\Debug\net6.0\DBManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Academy\Candidati\De Pieve\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\obj\Debug\net6.0\DBManager.AssemblyInfoInputs.cache
+C:\Academy\Candidati\De Pieve\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\obj\Debug\net6.0\DBManager.AssemblyInfo.cs
+C:\Academy\Candidati\De Pieve\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\obj\Debug\net6.0\DBManager.csproj.CoreCompileInputs.cache
+C:\Academy\Candidati\De Pieve\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\obj\Debug\net6.0\DBManager.dll
+C:\Academy\Candidati\De Pieve\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\obj\Debug\net6.0\refint\DBManager.dll
+C:\Academy\Candidati\De Pieve\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\obj\Debug\net6.0\DBManager.pdb
+C:\Academy\Candidati\De Pieve\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\obj\Debug\net6.0\DBManager.genruntimeconfig.cache
+C:\Academy\Candidati\De Pieve\Gestore-di-Credenziali_Marco-Da-Pieve\Credential Manager\DBManager\obj\Debug\net6.0\ref\DBManager.dll
