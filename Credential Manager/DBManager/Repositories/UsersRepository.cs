@@ -34,14 +34,7 @@ namespace DBManager.Repositories
 
         public bool IsAreadyUsername(string username)
         {
-            try
-            {
-                return _db.Users.Any(u => u.UserName == username);
-            }
-            catch
-            {
-                return false;
-            }
+            return _db.Users.Any(u => u.UserName == username);
         }
 
         public User SearchByIDAndPassword(int ID, string password)
