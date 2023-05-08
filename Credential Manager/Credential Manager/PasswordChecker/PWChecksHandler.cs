@@ -2,14 +2,14 @@
 
 namespace Credential_Manager.PasswordChecker
 {
-    internal static class PWChecksHandler
+    public class PWChecksHandler
     {
-        public static (bool, string) GetReport(string password)
+        public (bool, string) GetReport(string password)
         {
             IPWChecker PWChecker = Analyze(password);
             return (PWChecker.IsValid(), PWChecker.GetFailedRequirement());
         }
-        private static IPWChecker Analyze(string password)
+        private IPWChecker Analyze(string password)
         {
             IPWChecker passwordValidator = new PWBaseObject(password);
             passwordValidator = new MinLength(passwordValidator, password);

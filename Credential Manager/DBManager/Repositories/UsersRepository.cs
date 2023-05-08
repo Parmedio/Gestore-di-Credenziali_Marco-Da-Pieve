@@ -1,7 +1,5 @@
 ﻿using DBManager.Models.Entities;
 using DBManager.Repositories.DBContext;
-using Microsoft.Extensions.Logging;
-using System.Data;
 
 namespace DBManager.Repositories
 {
