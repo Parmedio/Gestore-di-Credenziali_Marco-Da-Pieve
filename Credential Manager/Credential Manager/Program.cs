@@ -1,4 +1,5 @@
-﻿using Credential_Manager.PasswordChecker;
+﻿using Credential_Manager.MailChecker;
+using Credential_Manager.PasswordChecker;
 using DBManager.Repositories;
 using DBManager.Repositories.DBContext;
 using DBManager.Services;
@@ -15,6 +16,7 @@ var context = new CredentialContext();
 var usersRepository = new UsersRepository(context);
 var usersService = new UsersService(usersRepository);
 
+
 //var receiptContent = usersService.SearchByIDAndPassword(2, "PinkCandy");
 //Console.WriteLine(receiptContent.ToString());
 
@@ -23,5 +25,10 @@ var usersService = new UsersService(usersRepository);
 //Console.WriteLine();
 //Console.WriteLine($"User \"Citrullo\" already in database: {usersService.IsAreadyUsername("Citrullo")}");
 
-Console.WriteLine(usersService.Insert("Matteo", "Usignolo"));
+//Console.WriteLine(usersService.Insert("Matteo", "Usignolo"));
 
+var myInput = "marco.rossi@gmail.com";
+var checker = new SetupChain().GetChain;
+
+Console.WriteLine($"Email is valid: {checker.ProcessRequest(myInput).Item1}");
+Console.WriteLine($"Message: {checker.ProcessRequest(myInput).Item2}");
