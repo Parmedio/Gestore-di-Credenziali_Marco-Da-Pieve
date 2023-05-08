@@ -6,7 +6,7 @@ namespace DBManager.Services
     public interface IUsersService
     {
         int Insert(string username, string password);
-        bool IsAreadyUsername(string username);
+        bool IsAreadyUserMail(string username);
         User SearchByIDAndPassword(int userID, string password);
     }
     public class UsersService : IUsersService
@@ -17,20 +17,27 @@ namespace DBManager.Services
         {
             _usersRepository = userRepository;
         }
-        public int Insert(string username, string password)
+        public int Insert(string mail, string password)
         {
             var userToInsert = new User()
             {
-                UserName = username,
+                UserEmail = mail,
                 Password = password,
                 RegistrationDate = DateTime.Now.ToString("yyyyMMdd")
             };
 
-            _usersRepository.Insert(userToInsert);
-            return _usersRepository.SearchByMailAndPassword(username, password);
+            try
+            {
+                _usersRepository.Insert(userToInsert);
+                return _usersRepository.SearchByMailAndPassword(mail, password);
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Somthing went wrong when inserting new user", e);
+            }
         }
 
-        public bool IsAreadyUsername(string username) => _usersRepository.IsAreadyUsername(username);
+        public bool IsAreadyUserMail(string mail) => _usersRepository.IsAreadyUserMail(mail);
 
         public User SearchByIDAndPassword(int userID, string password) => _usersRepository.SearchByIDAndPassword(userID, password);
     }

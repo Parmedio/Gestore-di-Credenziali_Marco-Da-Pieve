@@ -12,6 +12,7 @@ namespace Credential_Manager
                 .ConfigureServices((context, service) =>
                 {
                     service.AddSingleton<PWChecksHandler>();
+                    service.AddSingleton<PWChecksHandler>();
 
 
                     //service.AddSingleton<IIncrement>(_ => new Increment(5));

@@ -6,7 +6,7 @@ namespace DBManager.Repositories
     public interface IUsersRepository
     {
         bool Insert(User user);
-        bool IsAreadyUsername(string username);
+        bool IsAreadyUserMail(string mail);
         User SearchByIDAndPassword(int ID, string password);
         int SearchByMailAndPassword(string mail, string password);
     }
@@ -32,7 +32,7 @@ namespace DBManager.Repositories
             }
         }
 
-        public bool IsAreadyUsername(string username) => _db.Users.Any(u => u.UserName == username);
+        public bool IsAreadyUserMail(string mail) => _db.Users.Any(u => u.UserEmail == mail);
 
         public User SearchByIDAndPassword(int ID, string password)
         {
@@ -50,8 +50,7 @@ namespace DBManager.Repositories
         {
             try
             {
-                var user =  _db.Users.FirstOrDefault(u => u.UserName == mail && u.Password == password);
-                return user.UserId;
+                return _db.Users.FirstOrDefault(u => u.UserEmail == mail && u.Password == password).UserId;
             }
             catch (Exception e)
             {

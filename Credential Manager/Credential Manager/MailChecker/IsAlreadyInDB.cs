@@ -12,13 +12,13 @@ namespace Credential_Manager.MailChecker
             var usersRepository = new UsersRepository(context);
             var usersService = new UsersService(usersRepository);
 
-            if (!usersService.IsAreadyUsername(userEmail))
+            if (!usersService.IsAreadyUserMail(userEmail))
             {
                 if (_successor != null)
                     return _successor.ProcessRequest(userEmail);
-                return (true, "Inserted email is NOT in databse and meet all requirements");
+                return (true, "Inserted email is NOT in databse and meet format requirements");
             }
-            return (false, "Inserted email is ALREADY in databse");
+            return (false, "- Inserted email is ALREADY in databse");
         }
     }
 }

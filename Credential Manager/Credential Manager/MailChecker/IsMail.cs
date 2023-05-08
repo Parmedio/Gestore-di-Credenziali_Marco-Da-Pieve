@@ -12,7 +12,7 @@ namespace Credential_Manager.MailChecker
                     return _successor.ProcessRequest(userEmail);
                 return (true, "Inserted string is a valid mail");
             }
-            return (false, "Inserted string is NOT a valid mail");
+            return (false, "- Inserted string is NOT a valid mail");
         }
         private bool IsValidMail(string email)
         {

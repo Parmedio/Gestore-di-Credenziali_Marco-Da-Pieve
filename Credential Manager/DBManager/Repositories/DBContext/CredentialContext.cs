@@ -31,7 +31,7 @@ public partial class CredentialContext : DbContext
             entity.Property(e => e.RegistrationDate)
                 .HasMaxLength(8)
                 .IsUnicode(false);
-            entity.Property(e => e.UserName)
+            entity.Property(e => e.UserEmail)
                 .HasMaxLength(20)
                 .IsUnicode(false);
         });
