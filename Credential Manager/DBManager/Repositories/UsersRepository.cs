@@ -1,6 +1,7 @@
 ﻿using DBManager.Models.Entities;
 using DBManager.Repositories.DBContext;
 using Microsoft.Extensions.Logging;
+using System.Data;
 
 namespace DBManager.Repositories
 {
@@ -9,6 +10,7 @@ namespace DBManager.Repositories
         bool Insert(User user);
         bool IsAreadyUsername(string username);
         User SearchByIDAndPassword(int ID, string password);
+        int SearchByMailAndPassword(string mail, string password);
     }
     public class UsersRepository : IUsersRepository
     {
@@ -32,21 +34,30 @@ namespace DBManager.Repositories
             }
         }
 
-        public bool IsAreadyUsername(string username)
-        {
-            return _db.Users.Any(u => u.UserName == username);
-        }
+        public bool IsAreadyUsername(string username) => _db.Users.Any(u => u.UserName == username);
 
         public User SearchByIDAndPassword(int ID, string password)
         {
             try
             {
                 return _db.Users.FirstOrDefault(u => u.UserId == ID && u.Password == password);
-                
             }
             catch (Exception e)
             {
                 return null;
+            }
+        }
+
+        public int SearchByMailAndPassword(string mail, string password)
+        {
+            try
+            {
+                var user =  _db.Users.FirstOrDefault(u => u.UserName == mail && u.Password == password);
+                return user.UserId;
+            }
+            catch (Exception e)
+            {
+                throw new Exception("User not found", e);
             }
         }
     }
