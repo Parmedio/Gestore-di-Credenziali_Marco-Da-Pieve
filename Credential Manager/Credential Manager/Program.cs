@@ -24,7 +24,8 @@ void registrationHandler(User user)
     if (EmailIsValid && PWIsValid)
     {
         user.UserId = usersService.Insert(user.UserEmail, user.Password);
-        Console.WriteLine($"New account succesfully registered:\n{user.ToString()}");
+        var newUser = usersService.SearchByIDAndPassword(user.UserId, user.Password);
+        Console.WriteLine($"New account succesfully registered:\n{newUser.ToString()}");
     }
     else
     {
